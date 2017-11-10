@@ -9,11 +9,9 @@ public class QuickSort {
         int i = left;
         int j = right;
         int temp;
-
         for(;;){
             while((arr[i] < comparator)&&(i < right))i++;
             while((arr[j] > comparator)&&(j > left))j--;
-
             if(i <= j){
                 temp = arr[i];
                 arr[i] = arr[j];
